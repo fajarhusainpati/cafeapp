@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup_ui/constants.dart';
+import 'package:login_signup_ui/otpverify.dart';
 
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
@@ -63,6 +64,7 @@ class _RegisterState extends State<Register> {
           ),
           const Expanded(
             child: TextField(
+              textCapitalization: TextCapitalization.words,
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.w600,
@@ -131,7 +133,8 @@ class _RegisterState extends State<Register> {
           ),
           padding: const EdgeInsets.symmetric(vertical: 18.0),
           color: kButtonColor,
-          onPressed: () {},
+          onPressed: () => Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const OtpVerify())),
           child: const Text(
             "Continue",
             style: TextStyle(

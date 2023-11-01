@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signup_ui/resetpassword.dart';
 import 'constants.dart';
 
 class OtpVerify extends StatefulWidget {
@@ -115,7 +116,10 @@ class _OtpVerifyState extends State<OtpVerify> {
                         ),
                         padding: const EdgeInsets.symmetric(vertical: 18.0),
                         color: kButtonColor,
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ResetPassword())),
                         child: Text(
                           "Submit",
                           style: TextStyle(

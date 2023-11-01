@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup_ui/constants.dart';
+import 'package:login_signup_ui/forgotpassword.dart';
 import 'package:login_signup_ui/register.dart';
-import 'package:login_signup_ui/resetpassword.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -9,6 +9,8 @@ class Login extends StatefulWidget {
   @override
   State<Login> createState() => _LoginState();
 }
+
+const Color dividerColor = Color.fromRGBO(171, 176, 182, 1);
 
 class _LoginState extends State<Login> {
   @override
@@ -164,7 +166,7 @@ class _LoginState extends State<Login> {
                 flex: 4,
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  child: Image.asset("assets/images/login-2.png"),
+                  child: Image.asset("assets/images/login.png"),
                 ),
               ),
               Expanded(
@@ -191,7 +193,7 @@ class _LoginState extends State<Login> {
                         onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const ResetPassword())),
+                                builder: (context) => const ForgotPassword())),
                         child: const Text(
                           "Forgot Password?",
                           style: TextStyle(
@@ -216,7 +218,7 @@ class _LoginState extends State<Login> {
                         child: Divider(
                           indent: 10.0,
                           thickness: 0.5,
-                          color: Color.fromRGBO(171, 176, 182, 1),
+                          color: dividerColor,
                         ),
                       ),
                       Container(
@@ -234,7 +236,7 @@ class _LoginState extends State<Login> {
                         child: Divider(
                           endIndent: 10.0,
                           thickness: 0.5,
-                          color: Color.fromRGBO(171, 176, 182, 1),
+                          color: dividerColor,
                         ),
                       )
                     ],
