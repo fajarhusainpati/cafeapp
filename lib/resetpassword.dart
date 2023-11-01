@@ -11,6 +11,7 @@ class ResetPassword extends StatefulWidget {
 class _ResetPasswordState extends State<ResetPassword> {
   @override
   Widget build(BuildContext context) {
+    // New Password TextField
     Widget _buildNewPasswordTextField() {
       return Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -50,6 +51,7 @@ class _ResetPasswordState extends State<ResetPassword> {
       );
     }
 
+    // Confirm TextField
     Widget _buildConfirmPasswordTextField() {
       return Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -89,6 +91,7 @@ class _ResetPasswordState extends State<ResetPassword> {
       );
     }
 
+    // Submit Button
     Widget _buildSubmitBtn() {
       return SizedBox(
         width: MediaQuery.of(context).size.width,
@@ -131,13 +134,13 @@ class _ResetPasswordState extends State<ResetPassword> {
                   onTap: () => Navigator.pop(context),
                   child: const Icon(
                     Icons.arrow_back,
-                    color: Color.fromRGBO(98, 108, 130, 1),
+                    color: kBackButtonColor,
                   ),
                 ),
               ),
               Expanded(
                 flex: 8,
-                child: Image.asset("assets/images/reset-password2.png"),
+                child: Image.asset("assets/images/reset-password.png"),
               ),
               Expanded(
                 flex: 8,

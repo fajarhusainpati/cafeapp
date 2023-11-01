@@ -31,7 +31,7 @@ class _OtpVerifyState extends State<OtpVerify> {
                   onTap: () => Navigator.pop(context),
                   child: const Icon(
                     Icons.arrow_back,
-                    color: Color.fromRGBO(98, 108, 130, 1),
+                    color: kBackButtonColor,
                   ),
                 ),
               ),
@@ -120,13 +120,12 @@ class _OtpVerifyState extends State<OtpVerify> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const ResetPassword())),
-                        child: Text(
+                        child: const Text(
                           "Submit",
                           style: TextStyle(
-                            fontSize: 19.0,
-                            color: Colors.white.withOpacity(0.9),
-                            fontWeight: FontWeight.w600,
-                            letterSpacing: 0.5,
+                            fontSize: 18.0,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       ),

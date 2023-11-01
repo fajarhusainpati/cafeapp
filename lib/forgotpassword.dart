@@ -99,7 +99,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   onTap: () => Navigator.pop(context),
                   child: const Icon(
                     Icons.arrow_back,
-                    color: Color.fromRGBO(98, 108, 130, 1),
+                    color: kBackButtonColor,
                   ),
                 ),
               ),

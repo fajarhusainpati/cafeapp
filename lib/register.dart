@@ -19,9 +19,9 @@ class _RegisterState extends State<Register> {
         children: [
           Container(
             margin: const EdgeInsets.only(top: 8.0),
-            child: Icon(
+            child: const Icon(
               Icons.alternate_email_sharp,
-              color: const Color.fromRGBO(171, 176, 182, 1).withOpacity(0.8),
+              color: kInputColor,
             ),
           ),
           const SizedBox(
@@ -39,7 +39,11 @@ class _RegisterState extends State<Register> {
                   fontSize: 17.5,
                   fontWeight: FontWeight.w500,
                 ),
-                border: UnderlineInputBorder(),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: kInputColor,
+                  ),
+                ),
               ),
             ),
           ),
@@ -54,9 +58,9 @@ class _RegisterState extends State<Register> {
         children: [
           Container(
             margin: const EdgeInsets.only(top: 8.0),
-            child: Icon(
+            child: const Icon(
               Icons.person_outline,
-              color: const Color.fromRGBO(171, 176, 182, 1).withOpacity(0.8),
+              color: kInputColor,
             ),
           ),
           const SizedBox(
@@ -75,7 +79,11 @@ class _RegisterState extends State<Register> {
                   fontSize: 17.5,
                   fontWeight: FontWeight.w500,
                 ),
-                border: UnderlineInputBorder(),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: kInputColor,
+                  ),
+                ),
               ),
             ),
           ),
@@ -90,9 +98,9 @@ class _RegisterState extends State<Register> {
         children: [
           Container(
             margin: const EdgeInsets.only(top: 8.0),
-            child: Icon(
+            child: const Icon(
               Icons.call_outlined,
-              color: const Color.fromRGBO(171, 176, 182, 1).withOpacity(0.8),
+              color: kInputColor,
             ),
           ),
           const SizedBox(
@@ -113,7 +121,11 @@ class _RegisterState extends State<Register> {
                   fontSize: 17.5,
                   fontWeight: FontWeight.w500,
                 ),
-                border: UnderlineInputBorder(),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: kInputColor,
+                  ),
+                ),
               ),
             ),
           ),
@@ -166,7 +178,7 @@ class _RegisterState extends State<Register> {
                   onTap: () => Navigator.pop(context),
                   child: const Icon(
                     Icons.arrow_back,
-                    color: Color.fromRGBO(98, 108, 130, 1),
+                    color: kBackButtonColor,
                   ),
                 ),
               ),
@@ -206,7 +218,7 @@ class _RegisterState extends State<Register> {
                             style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w500,
-                              color: Color.fromRGBO(155, 164, 174, 1),
+                              color: kTextColor,
                               height: 1.35,
                             ),
                             children: [
@@ -222,7 +234,7 @@ class _RegisterState extends State<Register> {
                                 text: " and ",
                                 style: TextStyle(
                                   fontSize: 16.0,
-                                  color: Color.fromRGBO(155, 164, 174, 1),
+                                  color: kTextColor,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
