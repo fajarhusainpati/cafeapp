@@ -1,7 +1,10 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'package:flutter/material.dart';
 import 'package:login_signup_ui/constants.dart';
 import 'package:login_signup_ui/forgotpassword.dart';
 import 'package:login_signup_ui/register.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -170,7 +173,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               Expanded(
-                flex: 4,
+                flex: 5,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
